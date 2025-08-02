@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+/* ===== CSS RESET BÁSICO ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== Asegura que el HTML y el body ocupen todo el alto ===== */
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff;
+  overflow-x: hidden;
+}
