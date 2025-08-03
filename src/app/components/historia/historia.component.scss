@@ -64,7 +64,7 @@
       max-width: 500px;
     }
 
-    button {
+    .reserva-btn {
       padding: 0.6rem 1.4rem;
       font-size: 0.95rem;
       background-color: black;
@@ -75,6 +75,9 @@
       font-family: 'Open Sans', sans-serif;
       align-self: flex-start;
       transition: background-color 0.3s ease;
+      text-decoration: none;
+      text-align: center;
+      display: inline-block;
 
       &:hover {
         background-color: #333;
@@ -103,9 +106,37 @@
     .texto {
       text-align: center;
 
-      button {
+      .reserva-btn {
         align-self: center;
       }
     }
+  }
+}
+
+.imagenes-desktop {
+  display: flex; // aseguro que desktop las muestre
+}
+
+.imagen-movil {
+  display: none; // oculto en desktop
+
+  img {
+    width: 100%;
+    max-width: 240px;
+    height: 280px;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    margin: 1rem auto;
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .imagenes-desktop {
+    display: none !important; // ocultar las imágenes desktop en móvil
+  }
+
+  .imagen-movil {
+    display: block !important; // mostrar las imágenes móviles en móvil
   }
 }

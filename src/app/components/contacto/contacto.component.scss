@@ -1,0 +1,134 @@
+.contacto-section {
+  padding: 0;
+  background-color: #fdfbf5;
+  height: 100vh;
+
+  .contacto-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+    .imagen-pizza {
+      width: 50%;
+      height: 100%;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+    }
+
+    .info-contacto {
+      width: 50%;
+      height: 100%;
+      padding: 40px;
+      background-color: #fdfbf5;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: #000;
+
+      h2 {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 30px;
+      }
+
+      .dato {
+        margin-bottom: 20px;
+
+        strong {
+          display: block;
+          font-weight: bold;
+          margin-bottom: 5px;
+        }
+
+        p {
+          margin: 0;
+        }
+      }
+
+      .redes {
+        margin-top: 30px;
+        font-size: 1.5rem;
+
+        i {
+          margin-right: 20px;
+          cursor: pointer;
+        }
+      }
+
+      .redes a {
+        color: inherit;
+        text-decoration: none;
+
+        i {
+            transition: color 0.3s ease;
+        }
+
+        &:hover i {
+            color: #c70011;
+        }
+        }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .contacto-section {
+    height: auto;
+
+    .contacto-container {
+      flex-direction: column;
+
+      .imagen-pizza {
+        width: 100%;
+        height: 250px; // o lo que prefieras para la altura en móvil
+
+        img {
+          height: 100%;
+        }
+      }
+
+      .info-contacto {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+
+        h2 {
+          font-size: 1.5rem;
+        }
+
+        .dato {
+          margin-bottom: 15px;
+
+          strong {
+            font-size: 0.9rem;
+          }
+
+          p {
+            font-size: 0.95rem;
+          }
+        }
+
+        .redes {
+          font-size: 1.2rem;
+          color: inherit; // hereda el color del contenedor
+          text-decoration: none; // quita el subrayado
+
+          i {
+            margin-right: 15px;
+            transition: color 0.3s ease;
+          }
+
+          &:hover i{
+            color: #e63946
+          }
+        }
+      }
+    }
+  }
+}
+
